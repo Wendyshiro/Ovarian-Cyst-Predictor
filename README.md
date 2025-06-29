@@ -15,16 +15,20 @@ This AI-powered tool helps clinicians and patients make informed decisions about
 - ExcelWriter for data export
 - Git & GitHub for version control
 - (Planned) Streamlit / Flask for deployment
+- Currently used Descion Trees ML model
 
-## 📁 Project Structure
 
+## 📊 Sample Output (Excel Report)
 
-## 📊 Sample Output
+Below is a sample of the model's output, highlighting predictions and treatment recommendations for ovarian cyst cases.
 
-| Patient ID | Risk Score | Recommended Management | Clinical Flag |
-|------------|------------|-------------------------|----------------|
-| OC-1001    | 0.82       | Surgery                 | High Risk      |
-| OC-1002    | 0.34       | Observation             | Low Risk       |
+| Patient ID | Age | Cyst Size (cm) | CA-125 | Symptoms                         | Predicted Behavior | Recommended Treatment | Confidence | Clinical Flag |
+|------------|-----|----------------|--------|----------------------------------|---------------------|------------------------|------------|----------------|
+| OC-1000    | 52  | 3.2            | 19     | Pelvic pain, Nausea, Bloating    | Unstable            | Observation            | 0.53       | OK             |
+| OC-1001    | 62  | 7.9            | 111    | Bloating                         | Unstable            | Surgery                | 0.68       | OK             |
+| OC-1002    | 59  | 2.2            | 123    | Pelvic pain, Irregular periods   | Unstable            | Medication             | 0.53       | OK             |
+| OC-1003    | 64  | 5.5            | 116    | Nausea, Irregular periods        | Unstable            | Surgery                | 1.00       | OK             |
+
 
 ## ⚙️ How It Works
 
