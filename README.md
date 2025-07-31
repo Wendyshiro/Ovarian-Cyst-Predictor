@@ -31,11 +31,13 @@ An AI-powered clinical decision support tool that predicts ovarian cyst behavior
 
 The tool exports a rich Excel report combining clinical input data, derived features, and predictions from multiple machine learning models.
 Below is a sample snapshot of key fields:
-Patient ID	Age	Menopause Status	Cyst Size (cm)	CA 125 Level	Reported Symptoms	Risk Score	Recommended Mgmt	RF Predicted	RF Confidence	XGB Predicted	XGB Confidence	Ensemble Predicted	Ensemble Confidence
-OC-1000	52	Post-menopausal	3.2	19	Pelvic pain, Nausea, Bloating	5	Observation	0	0.23	0	0.06	0	0.15
-OC-1001	62	Post-menopausal	7.9	111	Bloating	7	Surgery	1	0.83	1	0.99	1	0.91
-OC-1002	59	Post-menopausal	2.2	123	Pain, Irregular periods	7	Medication	1	0.86	1	0.97	1	0.91
-OC-1003	64	Post-menopausal	5.5	116	Nausea, Irregular periods	8	Surgery	1	0.60	1	0.80	1	0.70
+| Patient ID | Age | Cyst Size (cm) | CA-125 | Symptoms                       | Predicted Behavior | Recommended Treatment | Confidence | Clinical Flag |
+| ---------- | --- | -------------- | ------ | ------------------------------ | ------------------ | --------------------- | ---------- | ------------- |
+| OC-1000    | 52  | 3.2            | 19     | Pelvic pain, Nausea, Bloating  | Unstable           | Observation           | 0.87       | OK            |
+| OC-1001    | 62  | 7.9            | 111    | Bloating                       | Unstable           | Surgery               | 0.91       | OK            |
+| OC-1002    | 59  | 2.2            | 123    | Pelvic pain, Irregular periods | Unstable           | Medication            | 0.84       | OK            |
+| OC-1003    | 64  | 5.5            | 116    | Nausea, Irregular periods      | Unstable           | Surgery               | 0.95       | OK            |
+
 🧠 Model Architecture & Prediction Logic
 
     Feature Engineering includes clinical ratios like CA125_Size_Ratio, Symptom_Age_Ratio, and binary flags for post-menopausal risk.
