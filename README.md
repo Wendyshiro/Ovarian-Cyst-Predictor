@@ -69,3 +69,4 @@ MIT License — Open source and free to use or adapt with attribution.
 MSc Software Engineering | AI for Healthcare Advocate
 
 🔗 Connect on LinkedIn: https://www.linkedin.com/in/wendy-waweru18/
+🔗 Try it now! : https://wendyshiro-ovarian-cyst-predictor-streamlit-app-demo-sbp02b.streamlit.app/
